@@ -1,0 +1,14 @@
+.progress_bar_label {
+    display: flex;
+    justify-content: space-between;
+}
+.progress_bar {
+    width: 100%;
+    height: 5px;
+    background-color: #717171;
+
+    .progress_bar_filler{
+        background-color: #F5E100;
+        height: 100%;
+    }
+}
