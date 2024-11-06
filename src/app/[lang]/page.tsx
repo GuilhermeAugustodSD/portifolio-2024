@@ -1,5 +1,5 @@
 import { AsideSection } from "../sections/AsideSection";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 const dynamicParams = false
 
@@ -10,9 +10,11 @@ const MainPage = async ({ params }: {
     const language = (await params).lang
 
     return (
-        <div>
-            <AsideSection language={language} />
-        </div>
+        <>
+            <div className={styles.teste}>
+                <AsideSection language={language} />
+            </div>
+        </>
     );
 }
 

@@ -10,14 +10,16 @@ import { FooterSection } from "./FooterSection"
 
 const AsideSection = ({ language }: SectionPropsType) => {
     return (
-        <section>
+        <aside className={styles.asideContainer}>
             <IntroSection language={language} />
-            <BasicInfoSection language={language} />
-            <MainSkillsSection language={language} />
-            <SecondarySkillsSection language={language} />
-            <SoftSkillsSection language={language} />
+            <div className={styles.skillsContainer}>
+                <BasicInfoSection language={language} />
+                <MainSkillsSection language={language} />
+                <SecondarySkillsSection language={language} />
+                <SoftSkillsSection language={language} />
+            </div>
             <FooterSection />
-        </section>
+        </aside>
     )
 }
 

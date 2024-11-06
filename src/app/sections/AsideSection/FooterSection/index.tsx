@@ -5,7 +5,7 @@ import { SectionPropsType } from "@/app/types/sections"
 
 const FooterSection = () => {
     return (
-        <div>
+        <div className={styles.footerContainer}>
             Linkedin: {user.linkedin}
             GitHub: {user.github}
             Download CV

@@ -6,7 +6,7 @@ import { DictionaryType } from "@/app/types/language"
 
 const MainSkillsSection = ({language}: SectionPropsType) => {
     return (
-        <div>
+        <div className={styles.mainSkillsContainer}>
             {skills.filter((skill) => skill.section == "main").map((skill) => {
                 return (
                     <CircularProgressBar name={skill.name[language as keyof DictionaryType]} percent={skill.percent} key={`mainSkill-${skill.name[language as keyof DictionaryType]}`} />
