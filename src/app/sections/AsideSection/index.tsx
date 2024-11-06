@@ -5,16 +5,19 @@ import { IntroSection } from "./IntroSection"
 import { MainSkillsSection } from "./MainSkillsSection"
 import { SecondarySkillsSection } from "./SecondarySkillsSection"
 import { SoftSkillsSection } from "./SoftSkillsSection"
+import { SectionPropsType } from "@/app/types/sections"
+import { FooterSection } from "./FooterSection"
 
-const AsideSection = () => {
+const AsideSection = ({ language }: SectionPropsType) => {
     return (
-        <>
-            <IntroSection />
-            <BasicInfoSection />
-            <MainSkillsSection />
-            <SecondarySkillsSection />
-            <SoftSkillsSection />
-        </>
+        <section>
+            <IntroSection language={language} />
+            <BasicInfoSection language={language} />
+            <MainSkillsSection language={language} />
+            <SecondarySkillsSection language={language} />
+            <SoftSkillsSection language={language} />
+            <FooterSection />
+        </section>
     )
 }
 

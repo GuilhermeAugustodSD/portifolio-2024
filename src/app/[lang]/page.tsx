@@ -1,25 +1,24 @@
 import { AsideSection } from "../sections/AsideSection";
 import styles from "./page.module.css";
 
-export const dynamicParams = false
+const dynamicParams = false
 
 const MainPage = async ({ params }: {
     params: Promise<{ lang: string }>
 }) => {
 
-    const { lang } = await params
+    const language = (await params).lang
 
     return (
         <div>
-            {lang}
-            {/* <AsideSection />s */}
+            <AsideSection language={language} />
         </div>
     );
 }
 
 const generateStaticParams = async () => {
-    return [{ lang: 'en' }, { lang: 'PT' }]
+    return [{ lang: 'en' }, { lang: 'pt' }, { lang: 'es' }]
 }
 
-export { generateStaticParams }
+export { generateStaticParams, dynamicParams }
 export default MainPage
