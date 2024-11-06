@@ -1,0 +1,42 @@
+.asideContainer {
+  max-width: 400px;
+  max-height: inherit;
+  height: 100%;
+  overflow-y: hidden;
+
+  display: grid;
+  grid-template-rows: 300px 1fr 50px;
+
+  @media (max-width: 600px) {
+    transform: translateX(-430px);
+  }
+
+  .skillsContainer {
+    background-color: #232323;
+    overflow-y: scroll;
+    height: 100%;
+
+    padding: 30px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 6px;
+      border: 6px solid transparent;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: transparent; 
+      border-radius: 6px;
+    }
+  
+    &::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+  }
+}
