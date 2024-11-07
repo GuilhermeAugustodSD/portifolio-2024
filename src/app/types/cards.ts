@@ -12,3 +12,12 @@ export interface CardRecommendationPropsType extends CardType {
   grade?: number 
   picture?: string 
 }
+
+export interface CardExperiencesType extends LanguageType {
+  ocupation: string
+  company: string
+  startDate: string
+  endDate: string
+  description: string
+
+}
