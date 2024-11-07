@@ -1,17 +1,22 @@
 import styles from "./index.module.scss"
-import { expertises } from "@/app/constants/expertises"
-import { ExperienceCard } from "@/app/components/ExperienceCard"
+import { projects } from "@/app/constants/projects"
+import { dictionary } from "@/app/constants/dictionary"
+import { DictionaryLanguagesType } from "@/app/types/language"
+import { SectionPropsType } from "@/app/types/sections"
+import { clients } from "@/app/constants/clients"
 
-const SummarySection = () => {
+const SummarySection = ({ language }: SectionPropsType) => {
+
+    const yearsExperience = 4
+    const projectsConcluded = projects.length
+    const happyClients = clients.length
 
     return (
-        <>
-            {expertises.map((expertise) => {
-                return (
-                    <ExperienceCard />
-                )
-            })}
-        </>
+        <div>
+            {yearsExperience}+ {dictionary.yearsExperience[language as keyof DictionaryLanguagesType]}
+            {projectsConcluded}+ {dictionary.concludedProjects[language as keyof DictionaryLanguagesType]}
+            {happyClients}+ {dictionary.happyClients[language as keyof DictionaryLanguagesType]}
+        </div>
     )
 }
 
