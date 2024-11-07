@@ -1,0 +1,10 @@
+.experiencesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

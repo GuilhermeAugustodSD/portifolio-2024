@@ -1,0 +1,16 @@
+.clientContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .cardsContainer {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+  }
+}

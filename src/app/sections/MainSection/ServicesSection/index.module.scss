@@ -1,0 +1,17 @@
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .containerCards {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+
+  }
+
+}

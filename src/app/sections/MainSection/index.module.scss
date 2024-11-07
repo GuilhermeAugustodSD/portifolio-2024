@@ -1,7 +1,14 @@
 .mainSectionContainer {
     padding: 30px;
+    overflow-y: scroll;
 
     .content {
         padding: 0 40px;
+
+        .gap30 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 }
