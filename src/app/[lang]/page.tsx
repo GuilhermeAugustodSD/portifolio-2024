@@ -11,7 +11,7 @@ const MainPage = async ({ params }: {
     const language = (await params).lang
 
     return (
-        <div className={styles.teste}>
+        <div className={styles.principalContainer}>
             <AsideSection language={language} />
             <MainSection language={language} />
         </div>
