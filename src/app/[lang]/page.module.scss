@@ -1,6 +1,9 @@
 .teste {
   height: 100%;
-  background-color: red;
-  max-width: 400px;
+  // background-color: red;
+  // max-width: 400px;
   width: 100%;
+
+  display: grid;
+  grid-template-columns: 400px 1fr 70px;
 }
