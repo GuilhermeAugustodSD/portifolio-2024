@@ -56,6 +56,11 @@ const dictionary: DictionaryType = {
         es: "Experiencias",
         pt: "Experiências"
     },
+    contractThisService: {
+        en: "Order now",
+        es: "Contrata este servicio",
+        pt: "Contrate esse serviço"
+    },
 }
 
 export { dictionary }
