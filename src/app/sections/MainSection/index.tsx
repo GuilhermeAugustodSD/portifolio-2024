@@ -9,8 +9,10 @@ const MainSection = ({ language }: SectionPropsType) => {
     return (
         <main className={styles.mainSectionContainer}>
             <HeaderSection />
-            <SummarySection language={language} />
-            <ServicesSection language={language} />
+            <div className={styles.content}>
+                <SummarySection language={language} />
+                <ServicesSection language={language} />
+            </div>
         </main>
     )
 }

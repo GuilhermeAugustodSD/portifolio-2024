@@ -12,10 +12,22 @@ const SummarySection = ({ language }: SectionPropsType) => {
     const happyClients = clients.length
 
     return (
-        <div>
-            {yearsExperience}+ {dictionary.yearsExperience[language as keyof DictionaryLanguagesType]}
-            {projectsConcluded}+ {dictionary.concludedProjects[language as keyof DictionaryLanguagesType]}
-            {happyClients}+ {dictionary.happyClients[language as keyof DictionaryLanguagesType]}
+        <div className={styles.summaryContainer}>
+            <div>
+                <span>{yearsExperience}+</span> 
+                {dictionary.yearsExperience[language as keyof DictionaryLanguagesType]}
+            </div>
+
+            <div>
+                <span>{projectsConcluded}+</span>
+                {dictionary.concludedProjects[language as keyof DictionaryLanguagesType]}
+
+            </div>
+
+            <div>
+                <span>{happyClients}+</span>
+                {dictionary.happyClients[language as keyof DictionaryLanguagesType]}
+            </div>
         </div>
     )
 }
