@@ -5,7 +5,7 @@ export interface UserType{
     ocupation: DictionaryLanguagesType
     country: DictionaryLanguagesType
     city: string
-    age: number
+    birthday: string
     linkedin: string
     github: string
 }

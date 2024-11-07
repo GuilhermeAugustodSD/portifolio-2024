@@ -13,7 +13,7 @@ const user: UserType = {
         pt: "Brasil"
     },
     city: "Brasília",
-    age: 30,
+    birthday: "2000-01-01",
     linkedin: "https://www.linkedin.com/in/",
     github: "https://github.com/"
 }
