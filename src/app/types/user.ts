@@ -1,9 +1,9 @@
-import { DictionaryType } from "./language"
+import { DictionaryLanguagesType } from "./language"
 
 export interface UserType{
     name: string
-    ocupation: DictionaryType
-    country: DictionaryType
+    ocupation: DictionaryLanguagesType
+    country: DictionaryLanguagesType
     city: string
     age: number
     linkedin: string
