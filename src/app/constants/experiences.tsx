@@ -6,7 +6,7 @@ const experiences = [
             pt: "Desenvolvedor Full Stack"
         },
         company: "Google Company",
-        startDate: "04/2020",
+        startDate: "2020-04-01",
         endDate: "*",
         description: {
             en: "Development and support of internal systems.",
