@@ -4,6 +4,8 @@ import styles from "./index.module.scss"
 import { SectionPropsType } from "@/app/types/sections"
 import { SummarySection } from "./SummarySection"
 import { ServicesSection } from "./ServicesSection"
+import { ExperiencesSection } from "./ExperiencesSection"
+import { ClientsSection } from "./ClientsSection"
 
 const MainSection = ({ language }: SectionPropsType) => {
     return (
@@ -11,7 +13,11 @@ const MainSection = ({ language }: SectionPropsType) => {
             <HeaderSection />
             <div className={styles.content}>
                 <SummarySection language={language} />
-                <ServicesSection language={language} />
+                <div className={styles.gap30}>
+                    <ServicesSection language={language} />
+                    <ClientsSection language={language} />
+                    <ExperiencesSection language={language} />
+                </div>
             </div>
         </main>
     )
