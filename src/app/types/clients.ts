@@ -4,6 +4,6 @@ export interface ClientType{
     name: string
     company: string
     picture: string
-    description?: DictionaryLanguagesType
+    description: DictionaryLanguagesType
     grade?: number
 }

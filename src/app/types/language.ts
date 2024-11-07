@@ -20,4 +20,5 @@ export interface DictionaryType {
     myServices: DictionaryLanguagesType
     recomendations: DictionaryLanguagesType
     experiences: DictionaryLanguagesType
+    contractThisService: DictionaryLanguagesType
 }
