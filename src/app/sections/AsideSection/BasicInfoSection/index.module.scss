@@ -1,0 +1,18 @@
+.basicInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h3 {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    font-weight: 700;
+    
+    span {
+      color: #999;
+      font-weight: 400;
+    }
+  }
+}

@@ -2,4 +2,19 @@
   background-color: #333;
   height: 50px;
   padding: 10px 40px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .downloadContaier {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
