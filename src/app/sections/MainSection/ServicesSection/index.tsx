@@ -1,16 +1,13 @@
 import styles from "./index.module.scss"
-import { expertises } from "@/app/constants/expertises"
-import { ExperienceCard } from "@/app/components/ExperienceCard"
+import { dictionary } from "@/app/constants/dictionary"
+import { DictionaryLanguagesType } from "@/app/types/language"
+import { SectionPropsType } from "@/app/types/sections"
 
-const ServicesSection = () => {
+const ServicesSection = ({ language }: SectionPropsType) => {
 
     return (
         <>
-            {expertises.map((expertise) => {
-                return (
-                    <ExperienceCard />
-                )
-            })}
+            {dictionary.myServices[language as keyof DictionaryLanguagesType]}
         </>
     )
 }
