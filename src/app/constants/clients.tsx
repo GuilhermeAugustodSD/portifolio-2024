@@ -1,6 +1,7 @@
+import { ClientType } from "../types/clients"
 import { user } from "./personalInfo"
 
-const clients = [
+const clients: ClientType[] = [
     {
         name: "Fulano Rodrigues",
         company: "Google",
