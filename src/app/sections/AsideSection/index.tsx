@@ -18,7 +18,7 @@ const AsideSection = ({ language }: SectionPropsType) => {
                 <SecondarySkillsSection language={language} />
                 <SoftSkillsSection language={language} />
             </div>
-            <FooterSection />
+            <FooterSection language={language} />
         </aside>
     )
 }
