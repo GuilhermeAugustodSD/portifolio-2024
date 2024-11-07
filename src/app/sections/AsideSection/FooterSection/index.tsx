@@ -19,7 +19,7 @@ const FooterSection = ({ language }: SectionPropsType) => {
                 </a>
             </div>
             <div className={styles.downloadContaier}>
-                {dictionary.download[language as keyof DictionaryLanguagesType]} CV
+                <span>{dictionary.download[language as keyof DictionaryLanguagesType]} CV</span>
                 <IoMdDownload size={20}/>
             </div>
         </div>
