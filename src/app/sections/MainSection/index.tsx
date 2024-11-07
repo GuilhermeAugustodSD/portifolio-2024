@@ -2,12 +2,16 @@ import { HeaderSection } from "./HeaderSection"
 import styles from "./index.module.scss"
 
 import { SectionPropsType } from "@/app/types/sections"
+import { SummarySection } from "./SummarySection"
+import { ServicesSection } from "./ServicesSection"
 
 const MainSection = ({ language }: SectionPropsType) => {
     return (
-        <section>
+        <main className={styles.mainSectionContainer}>
             <HeaderSection />
-        </section>
+            <SummarySection language={language} />
+            <ServicesSection language={language} />
+        </main>
     )
 }
 
