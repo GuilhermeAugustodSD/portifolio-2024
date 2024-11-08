@@ -3,7 +3,7 @@ import styles from "./index.module.scss"
 import { Switch } from "@/app/components/Switch"
 
 const ControlsSection = ({ language }: SectionPropsType) => {
-  console.log("***", language);
+ 
   
   return (
       <div className={styles.controlsContainer}>
@@ -13,9 +13,9 @@ const ControlsSection = ({ language }: SectionPropsType) => {
         </div>
 
         <div className={styles.languagesContainer}>
-          <button className={language == "es" ? styles.active : `${styles.desactive}`} value="es">es</button>
-          <button className={language == "en" ? styles.active : `${styles.desactive}`}value="en">en</button>
-          <button className={language == "pt" ? styles.active : `${styles.desactive}`} value="pt">pt</button>
+          <a className={language == "es" ? styles.active : `${styles.desactive}`} href="/es">es</a>
+          <a className={language == "en" ? styles.active : `${styles.desactive}`} href="/en">en</a>
+          <a className={language == "pt" ? styles.active : `${styles.desactive}`} href="/pt">pt</a>
         </div>
       </div>
   )
