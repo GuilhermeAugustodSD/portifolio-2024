@@ -12,12 +12,13 @@ const ServicesSection = ({ language }: SectionPropsType) => {
             <h5>{dictionary.myServices[language as keyof DictionaryLanguagesType]}</h5>
 
             <div className={styles.containerCards}>
-                {expertises.map((expertise) => {
+                {expertises.map((expertise,idx) => {
                     return (
                         <Card
                             language={language}
                             name={expertise.name[language as keyof DictionaryLanguagesType]}
                             description={expertise.description[language as keyof DictionaryLanguagesType]}
+                            key={`expertise-${idx}`}
                         />
                     )
                 })}
