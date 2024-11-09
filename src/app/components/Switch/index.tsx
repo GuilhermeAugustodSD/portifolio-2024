@@ -1,16 +1,29 @@
 "use client"
+import { useEffect, useState } from "react"
 import styles from "./index.module.scss"
 
 const Switch = () => {
 
+    const [isActive, setIsActive] = useState(false)
+
     const onChangeSwitch = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.checked ? "light" : "dark"
         document.body.setAttribute("data-theme", value)
+        localStorage.setItem("p2024-dm", value)
+        setIsActive(e.target.checked)
     }
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsActive(localStorage.getItem("p2024-dm") === "light")
+        } else {
+            setIsActive(document.body.getAttribute("data-theme") === "light")
+        }
+    }, [])
 
     return (
         <div className={styles.switchContainer}>
-            <input className={styles.switchInput} type="checkbox" onChange={onChangeSwitch} />
+            <input className={styles.switchInput} type="checkbox" onChange={onChangeSwitch} checked={isActive} />
             <div className={styles.switchButton}>
                 <div className={styles.switchButtonInside}>
                     <svg className={`${styles.switchIcon} off`} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">

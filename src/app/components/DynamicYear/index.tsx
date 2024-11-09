@@ -1,6 +1,6 @@
 "use client"
 
-import { DynamicYearType } from "@/app/types/components"
+import { DynamicYearType } from "@/app/types/date"
 import { calculateYears } from "@/app/utils/date"
 import { memo, useEffect, useState } from "react"
 

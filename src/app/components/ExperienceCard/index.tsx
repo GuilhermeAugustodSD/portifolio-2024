@@ -3,17 +3,15 @@ import styles from "./index.module.scss"
 import { months } from "@/app/constants/months"
 import { DictionaryLanguagesType } from "@/app/types/language"
 
-const ExperienceCard = ({ocupation, company, startDate, endDate, description, language}: CardExperiencesType) => {
+const ExperienceCard = ({ ocupation, company, startDate, endDate, description, language }: CardExperiencesType) => {
 
     const getDateFormated = () => {
         const splitValues = startDate.split('-')
         const mes = Number(splitValues[1])
         const ano = splitValues[0]
         const date = new Date(startDate)
-        
-        console.log(date);
-        
-        if (endDate == "*") return `${months[3].name[language as typeof DictionaryLanguagesType]}/${ano}-ATUAL`
+
+        if (endDate == "*") return `${months[3].name[language as keyof DictionaryLanguagesType]}/${ano}-ATUAL`
     }
 
     return (

@@ -36,7 +36,7 @@ const ClientsSection = ({ language }: SectionPropsType) => {
                       modules={[Keyboard, Pagination, Navigation]}
                     className={styles.cardsContainer}
                 >
-                    {clients.map((client) => {
+                    {clients.map((client, idx) => {
                         return (
                             <SwiperSlide key={`client-${client.name}`}>
                                 <CardRecommendation
@@ -46,6 +46,7 @@ const ClientsSection = ({ language }: SectionPropsType) => {
                                     grade={client.grade}
                                     picture={client.picture}
                                     company={client.company}
+                                    key={`client-${idx}`}
                                 />
                             </SwiperSlide>
                         )
