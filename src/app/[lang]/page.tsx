@@ -2,6 +2,7 @@ import { AsideSection } from "../sections/AsideSection";
 import styles from "./page.module.scss";
 import { MainSection } from "../sections/MainSection";
 import { ControlsSection } from "../sections/ControlsSection";
+import { DarkModeHolder } from "../components/DarkModeHolder";
 
 const dynamicParams = false
 
@@ -13,6 +14,7 @@ const MainPage = async ({ params }: {
 
     return (
         <div className={styles.principalContainer}>
+            <DarkModeHolder />
             <AsideSection language={language} />
             <MainSection language={language} />
             <ControlsSection language={language} />
