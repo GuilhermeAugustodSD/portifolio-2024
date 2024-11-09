@@ -5,12 +5,12 @@ export interface CardType extends LanguageType {
   description: string
 }
 
-export interface CardPropsType extends CardType {}
+export interface CardPropsType extends CardType { }
 
 export interface CardRecommendationPropsType extends CardType {
   company?: string
-  grade?: number 
-  picture?: string 
+  grade?: number
+  picture?: string
 }
 
 export interface CardExperiencesType extends LanguageType {
@@ -19,5 +19,4 @@ export interface CardExperiencesType extends LanguageType {
   startDate: string
   endDate: string
   description: string
-
 }
