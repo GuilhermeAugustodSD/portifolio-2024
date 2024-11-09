@@ -51,6 +51,10 @@ body {
   }
   &[data-theme='light']{
     background: #FFF;
+
+    h5 {
+      color: #000;
+    }
   }
   color: var(--color-primary);
   background: var(--bg-800);
@@ -94,5 +98,18 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.swiper  {
+  overflow: visible !important;
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+    color: #c5c4c49a;
+  }
+
+  .swiper-pagination span {
+    background-color: #c5c4c49a;
   }
 }
