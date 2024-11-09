@@ -1,9 +1,16 @@
+"use client"
 import styles from "./index.module.scss"
 
 const Switch = () => {
+
+    const onChangeSwitch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.checked ? "light" : "dark"
+        document.body.setAttribute("data-theme", value)
+    }
+
     return (
         <div className={styles.switchContainer}>
-            <input className={styles.switchInput} type="checkbox" />
+            <input className={styles.switchInput} type="checkbox" onChange={onChangeSwitch} />
             <div className={styles.switchButton}>
                 <div className={styles.switchButtonInside}>
                     <svg className={`${styles.switchIcon} off`} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">

@@ -46,6 +46,12 @@ body {
 }
 
 body {
+  &[data-theme='dark']{
+    background: #1E1E1E;
+  }
+  &[data-theme='light']{
+    background: #FFF;
+  }
   color: var(--color-primary);
   background: var(--bg-800);
 
