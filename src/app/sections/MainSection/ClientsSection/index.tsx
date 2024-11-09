@@ -13,7 +13,7 @@ const ClientsSection = ({ language }: SectionPropsType) => {
 
             <div className={styles.cardsContainer}>
 
-                {clients.map((client) => {
+                {clients.map((client, idx) => {
                     return (
                         <CardRecommendation
                             language={language}
@@ -22,6 +22,7 @@ const ClientsSection = ({ language }: SectionPropsType) => {
                             grade={client.grade}
                             picture={client.picture}
                             company={client.company}
+                            key={`client-${idx}`}
                         />
                     )
                 })}
