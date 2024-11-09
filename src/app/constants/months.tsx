@@ -1,4 +1,6 @@
-const months = [
+import { MonthType } from "../types/date";
+
+const months: MonthType[] = [
   { name: { en: "JAN", es: "ENE", pt: "JAN" } },
   { name: { en: "FEB", es: "FEB", pt: "FEV" } },
   { name: { en: "MAR", es: "MAR", pt: "MAR" } },
