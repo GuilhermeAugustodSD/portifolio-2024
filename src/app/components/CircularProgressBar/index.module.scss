@@ -1,3 +1,8 @@
+@property --progress {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
 .circularProgressContainer {
 
     display: flex;
@@ -5,13 +10,15 @@
     gap: 12px;
     align-items: center;
     justify-content: center;
-    
+
     .progress_bar {
         width: 60px;
         aspect-ratio: 1/1;
         border-radius: 50%;
         position: relative;
-    
+        background: conic-gradient(#F5E100, #F5E100 var(--progress), rgba(0, 0, 0, 0) 0%);
+        transition: --progress 2s;
+
         .progress_bar_filler {
             background: #232323;
             position: absolute;
@@ -26,5 +33,4 @@
             align-items: center;
         }
     }
-
 }
