@@ -5,9 +5,9 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  box-shadow: 2px 2px 4px 1px #00000080;
+  box-shadow: 2px 2px 4px 1px #00000028;
   background-color: rgba($color: #FFF, $alpha: .03);
-  border: 1px solid rgba($color: #F5E100, $alpha: .5);
+  border: .5px solid rgba($color: #F5E100, $alpha: .25);
   border-radius: 10px;
   .words {
     display: flex;
