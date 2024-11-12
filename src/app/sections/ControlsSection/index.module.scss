@@ -7,10 +7,21 @@
   flex-direction: column;
   justify-content: space-between;
   // align-items: last baseline;
-  background-color: #333;
+  background-color: rgba($color: #FFF, $alpha: .03);
+  border-radius: 10px;
   position: fixed;
   top: 0;
   right: 0;
+
+  @media (max-width: 1000px) {
+    top: unset;
+    bottom: 0;
+    right: 0;
+    height: max-content;
+    width: 100%;
+    flex-direction: row;
+    z-index: 10;
+  }
 
   .toogle {
     height: max-content;
@@ -18,11 +29,20 @@
     width: 40px;
     transform: rotate(-90deg);
     margin-top: 30px;
+
+    @media (max-width: 1000px) {
+      transform: rotate(0);
+      margin-top: unset;
+    }
   }
 
   .languagesContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: 1000px) {
+      flex-direction: row;
+    }
   }
 }

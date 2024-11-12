@@ -4,4 +4,8 @@
 
   display: grid;
   grid-template-columns: 400px 1fr 70px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 0 1fr 70px;
+  }
 }
