@@ -38,7 +38,7 @@ const ClientsSection = ({ language }: SectionPropsType) => {
                 >
                     {clients.map((client, idx) => {
                         return (
-                            <SwiperSlide key={`client-${client.name}`}>
+                            <SwiperSlide key={`client-${idx}`}>
                                 <CardRecommendation
                                     language={language}
                                     name={client.name}
@@ -46,7 +46,6 @@ const ClientsSection = ({ language }: SectionPropsType) => {
                                     grade={client.grade}
                                     picture={client.picture}
                                     company={client.company}
-                                    key={`client-${idx}`}
                                 />
                             </SwiperSlide>
                         )

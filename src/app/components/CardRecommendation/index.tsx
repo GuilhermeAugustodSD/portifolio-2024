@@ -2,6 +2,7 @@ import styles from "./index.module.scss"
 import { GoStarFill, GoStar } from "react-icons/go";
 import { CardRecommendationPropsType } from "@/app/types/cards";
 import Image from "next/image";
+import { Fragment } from "react";
 
 const CardRecommendation = ({ name, description, company, language, grade, picture }: CardRecommendationPropsType) => {
 
@@ -26,8 +27,8 @@ const CardRecommendation = ({ name, description, company, language, grade, pictu
                 grade &&
                 <div>
                     {
-                        stars.map((star) => (
-                            <>{star}</>
+                        stars.map((star,idx) => (
+                            <Fragment key={`start-${idx}`}>{star}</Fragment>
                         ))
                     }
                 </div>
