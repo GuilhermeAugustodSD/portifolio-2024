@@ -12,7 +12,7 @@ const ExperiencesSection = ({ language }: SectionPropsType) => {
             <h5>{dictionary.experiences[language as keyof DictionaryLanguagesType]}</h5>
 
             <div className={styles.cardsContainer}>
-                {experiences.map((experience) => {
+                {experiences.map((experience, idx) => {
                     return (
                         <ExperienceCard
                             language={language}
@@ -21,6 +21,7 @@ const ExperiencesSection = ({ language }: SectionPropsType) => {
                             startDate={experience.startDate}
                             endDate={experience.endDate}
                             description={experience.description[language as keyof DictionaryLanguagesType]}
+                            key={`experience-${idx}`}
                         />
                     )
                 })}
