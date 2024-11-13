@@ -24,8 +24,6 @@ const ClientsSection = ({ language }: SectionPropsType) => {
                 <Swiper
                     spaceBetween={20}
                     slidesPerView={3}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     keyboard={{
                         enabled: true,
                       }}
