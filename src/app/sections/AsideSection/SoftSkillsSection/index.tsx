@@ -10,7 +10,7 @@ const SoftSkillsSection = ({ language }: SectionPropsType) => {
             {skills.filter((skill) => skill.section == "soft").map((skill) => {
                 return (
                     <div className={styles.softSkill} key={`softSkill-${skill.name[language as keyof DictionaryLanguagesType]}`}>
-                        <FaCheck size={14} color="#F5E100"/>
+                        <FaCheck size={14} color="var(--color-destaque)"/>
                         {skill.name[language as keyof DictionaryLanguagesType]}
                     </div>
                 )

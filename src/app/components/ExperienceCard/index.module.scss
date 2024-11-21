@@ -12,7 +12,7 @@
     gap: 5px;
 
     small {
-      color: #F5E100;
+      color: var(--color-destaque);
       font-size: 12px;
       text-transform: uppercase;
       font-weight: 700;
@@ -32,14 +32,14 @@
 
   .line {
     height: 2px;
-    background-color: #F5E100;
+    background-color: var(--color-destaque);
     position: relative;
 
     &::before {
       content: '';
       width: 10px;
       height: 10px;
-      background-color: #F5E100;
+      background-color: var(--color-destaque);
       position: absolute;
       top: 50%;
       right: -10px;

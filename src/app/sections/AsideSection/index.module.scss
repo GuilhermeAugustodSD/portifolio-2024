@@ -13,9 +13,9 @@
   }
 
   .skillsContainer {
-    background-color: #232323;
+    background-color: var(--bg-500);
     overflow-y: scroll;
     height: 100%;
-     padding: 30px;
+    padding: 30px;
   }
 }

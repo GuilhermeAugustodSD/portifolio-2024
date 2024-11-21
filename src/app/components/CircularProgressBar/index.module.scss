@@ -17,11 +17,11 @@
         aspect-ratio: 1/1;
         border-radius: 50%;
         position: relative;
-        background: conic-gradient(#F5E100, #F5E100 var(--progress), rgba(0, 0, 0, 0) 0%);
+        background: conic-gradient(var(--color-destaque), var(--color-destaque) var(--progress), rgba(0, 0, 0, 0) 0%);
         transition: --progress 2s;
 
         .progress_bar_filler {
-            background: #232323;
+            background: var(--bg-500);
             position: absolute;
             width: 52px;
             aspect-ratio: 1/1;

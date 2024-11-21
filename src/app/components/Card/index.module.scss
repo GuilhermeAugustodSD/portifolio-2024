@@ -7,7 +7,7 @@
   gap: 20px;
   box-shadow: 2px 2px 4px 1px #00000028;
   background-color: rgba($color: #FFF, $alpha: .03);
-  border: .5px solid rgba($color: #F5E100, $alpha: .25);
+  border: .5px solid rgba($color: var(--color-destaque), $alpha: .25);
   border-radius: 10px;
   .words {
     display: flex;
@@ -28,7 +28,7 @@
 
   a {
     font-weight: 700;
-    color: #F5E100;
+    color: var(--color-destaque);
     font-size: 14px;
     text-transform: uppercase;
 
