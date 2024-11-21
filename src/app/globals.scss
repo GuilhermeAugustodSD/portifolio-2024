@@ -47,15 +47,32 @@ body {
 
 body {
   &[data-theme='dark']{
-    background: #1E1E1E;
+    --bg-200: #333;
+    --bg-500: #232323;
+    --bg-800: #1E1E1E;
+    --color-destaque: #F5E100;
+
+    --color-primary: #FFF;
+    --color-secondary: #999;
+
+    --color-cards-bg: #FFF
+    --percent-cards: .03
+
   }
   &[data-theme='light']{
-    background: #FFF;
-
-    h5 {
-      color: #000;
-    }
+    --bg-200: #a1a1a1e1;
+    --bg-500: rgb(209, 209, 209);
+    --bg-800: #dadada;
+    --color-destaque: #e67811;
+    --color-primary: #333333;
+    --color-secondary: #666666;
+    
+    
+    --color-cards-bg: #FFF
+    --percent-cards: .4
   }
+
+
   color: var(--color-primary);
   background: var(--bg-800);
 

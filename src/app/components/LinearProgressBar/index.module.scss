@@ -20,7 +20,7 @@
         border-radius: 10px;
 
         .progress_bar_filler {
-            background-color: #F5E100;
+            background-color: var(--color-destaque);
             border-radius: 10px;
             -webkit-animation: filler 5s linear;
             animation: filler 2s linear;

@@ -7,8 +7,8 @@ import { Fragment } from "react";
 const CardRecommendation = ({ name, description, company, language, grade, picture }: CardRecommendationPropsType) => {
 
     const gradeCalculated = grade ?? 0
-    const starsFilled = new Array(grade).fill(<GoStarFill color="#F5E100" />)
-    const starsEmpty = new Array(5 - gradeCalculated).fill(<GoStar color="#F5E100" />)
+    const starsFilled = new Array(grade).fill(<GoStarFill color="var(--color-destaque)" />)
+    const starsEmpty = new Array(5 - gradeCalculated).fill(<GoStar color="var(--color-destaque)" />)
 
     const stars = starsFilled.concat(starsEmpty)
 

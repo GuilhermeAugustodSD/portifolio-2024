@@ -8,6 +8,7 @@
   justify-content: space-between;
   // align-items: last baseline;
   background-color: rgba($color: #FFF, $alpha: .03);
+  background-color: var(--bg-500);
   border-radius: 10px;
   position: fixed;
   top: 0;
