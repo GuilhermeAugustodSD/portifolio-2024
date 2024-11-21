@@ -5,7 +5,7 @@ const HeaderSection = () => {
 
     return (
         <div className={styles.headerContainer}>
-            <Image src="/background.jpeg" alt="" width={1168} height={342} />
+            <Image src="/header-4.jpg" alt="" width={1168} height={342} />
         </div>
     )
 }
