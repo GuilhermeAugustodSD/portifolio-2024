@@ -2,7 +2,6 @@ import { AsideSection } from "../sections/AsideSection";
 import styles from "./page.module.scss";
 import { MainSection } from "../sections/MainSection";
 import { ControlsSection } from "../sections/ControlsSection";
-import { DarkModeHolder } from "../components/DarkModeHolder";
 import { languages } from "../constants/languages";
 import { Metadata } from "next";
 import { user } from "../constants/personalInfo";
@@ -54,7 +53,6 @@ const MainPage = async ({ params }: { params: Promise<{ lang: string }> }) => {
 
     return (
         <div className={styles.principalContainer}>
-            <DarkModeHolder />
             <AsideSection language={language} />
             <MainSection language={language} />
             <ControlsSection language={language} />
