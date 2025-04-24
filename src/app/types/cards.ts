@@ -7,6 +7,11 @@ export interface CardType extends LanguageType {
 
 export interface CardPropsType extends CardType { }
 
+export interface CardProjectPropsType extends CardType { 
+  srcImage: string
+  urlProject: string
+}
+
 export interface CardRecommendationPropsType extends CardType {
   company?: string
   grade?: number
