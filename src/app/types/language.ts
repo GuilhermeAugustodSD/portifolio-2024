@@ -9,6 +9,8 @@ export interface DictionaryLanguagesType {
 }
 
 export interface DictionaryType {
+    welcome: DictionaryLanguagesType
+    resume: DictionaryLanguagesType
     residence: DictionaryLanguagesType
     city: DictionaryLanguagesType
     age: DictionaryLanguagesType
@@ -20,5 +22,7 @@ export interface DictionaryType {
     myServices: DictionaryLanguagesType
     recomendations: DictionaryLanguagesType
     experiences: DictionaryLanguagesType
+    projects: DictionaryLanguagesType
+    viewProject: DictionaryLanguagesType
     contractThisService: DictionaryLanguagesType
 }
