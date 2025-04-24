@@ -1,0 +1,67 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .containerInputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+  
+        input {
+          padding: 8px 24px;
+          min-height: 50px;
+          background-color: var(--card-color);
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+
+  }
+
+  label {
+    font-weight: 300;
+  }
+  .containerTextArea {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    
+    textarea {
+      background-color: var(--card-color);
+      border: none;
+      height: 100%;
+      border-radius: 10px;
+      padding: 24px;
+
+      &:focus {
+        border: none;
+      }
+    }
+  }
+
+}

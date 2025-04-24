@@ -8,4 +8,9 @@
   @media (max-width: 1000px) {
     grid-template-columns: 0 1fr 70px;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
 }

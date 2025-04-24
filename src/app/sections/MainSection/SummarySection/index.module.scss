@@ -4,23 +4,41 @@
   justify-content: space-around;
   margin: 30px 0;
 
-  background-color: rgba($color: #FFF, $alpha: .03);
+  background-color: var(--card-color);
   border-radius: 10px;
 
   padding: 25px 0;
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+    padding: 8px;
+  }
+
   div {
     display: flex;
     align-items: center;
     gap: 20px;
 
+    @media (max-width: 768px) {
+      gap: 8px;
+    }
+
     span {
       font-size: 32px;
       color: var(--color-destaque);
-      font-weight: 700;
+      font-weight: 900;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     font-size: 16px;
-    color: #FFF;
-    font-weight: 400;
+    color: var(--color-primary);
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }

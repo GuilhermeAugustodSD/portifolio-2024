@@ -5,10 +5,14 @@
   flex-direction: column;
   gap: 20px;
   box-shadow: 2px 2px 4px 1px #00000028;
-  background-color: rgba($color: var(--color-cards-bg), $alpha: var(--percent-cards));
-  border: .5px solid rgba($color: var(--color-destaque), $alpha: .25);
+  background-color: var(--card-color);
   border-radius: 10px;
   position: relative;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    width: 100%;
+  }
 
   img {
     position: absolute;
@@ -32,6 +36,4 @@
       line-height: 1.4;
     }
   }
-
-  
 }

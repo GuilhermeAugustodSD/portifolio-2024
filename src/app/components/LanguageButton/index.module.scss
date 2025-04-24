@@ -11,8 +11,20 @@
     align-items: center;
 
     font-weight: 700;
-    color: #BCBCBC;
-    background-color: #535353;
+    // color: #BCBCBC;
+    // background-color: #535353;
+    color: var(--color-primary);
+    background-color: var(--bg-200);
+
+    &:hover {
+        opacity: .8;
+    }
+
+    @media (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
+
 
     &.active {
         background-color: var(--color-destaque);

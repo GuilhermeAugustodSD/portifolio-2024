@@ -1,5 +1,6 @@
 .cardContainer {
-  padding: 30px;
+  padding: 0 0 30px 0;
+  position: relative;
   
   display: flex;
   flex-direction: column;
@@ -7,19 +8,39 @@
   gap: 20px;
   box-shadow: 2px 2px 4px 1px #00000028;
   background-color: var(--card-color);
-  // border: .5px solid rgba($color: var(--color-destaque), $alpha: .25);
-  border-radius: 10px;
-
 
   @media (max-width: 768px) {
     max-width: 100%;
     width: 100%;
   }
+
+  .iconOpenModal {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+    transition: all ease .3;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
   
+  img {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920/1080;
+  }
+
+  border-radius: 10px;
   .words {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 0 20px;
 
     h6 {
       font-weight: 700;
@@ -38,6 +59,7 @@
     color: var(--color-destaque);
     font-size: 14px;
     text-transform: uppercase;
+    padding: 0 20px;
 
     display: flex;
     align-items: center;

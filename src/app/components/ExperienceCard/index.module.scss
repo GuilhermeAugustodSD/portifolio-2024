@@ -4,6 +4,11 @@
   align-items: center;
   gap: 30px;
 
+  @media(max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
 
   .infosPrincipais {
     width: max-content;
@@ -21,12 +26,17 @@
     h6 {
       font-size: 20px;
       font-weight: 700;
+
+      @media(max-width: 768px) {
+        font-size: 18px;
+      }
     }
 
     span {
       font-size: 16px;
       font-weight: 400;
-      color: #9D9D9D;
+      // color: #9D9D9D;
+      color: var(--color-secondary);
     }
   }
 
@@ -34,6 +44,12 @@
     height: 2px;
     background-color: var(--color-destaque);
     position: relative;
+
+    @media(max-width: 768px) {
+      padding: 0 24px;
+      max-width: 200px;
+      width: 100%;
+    }
 
     &::before {
       content: '';

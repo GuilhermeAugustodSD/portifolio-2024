@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: space-between;
   // align-items: last baseline;
-  background-color: rgba($color: #FFF, $alpha: .03);
   background-color: var(--bg-500);
   border-radius: 10px;
   position: fixed;
@@ -22,7 +21,10 @@
     width: 100%;
     flex-direction: row;
     z-index: 10;
+    padding: 15px;
   }
+
+  
 
   .toogle {
     height: max-content;
@@ -35,6 +37,8 @@
       transform: rotate(0);
       margin-top: unset;
     }
+
+    
   }
 
   .languagesContainer {
