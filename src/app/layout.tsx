@@ -29,8 +29,14 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-                  const theme = localStorage.getItem('p2024-dm') || 'dark';
-                  document.documentElement.setAttribute('data-theme', theme);
+                  (function() {
+                    try {
+                      const theme = localStorage.getItem('p2024-dm') || 'dark';
+                      document.documentElement.setAttribute('data-theme', theme);
+                    } catch (e) {
+                      document.documentElement.setAttribute('data-theme', 'dark');
+                    }
+                  })();
             `,
           }}
         />

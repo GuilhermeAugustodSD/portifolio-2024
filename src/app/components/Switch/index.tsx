@@ -8,16 +8,17 @@ const Switch = () => {
 
     const onChangeSwitch = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.checked ? "light" : "dark"
-        document.body.setAttribute("data-theme", value)
+        document.documentElement.setAttribute("data-theme", value)
         localStorage.setItem("p2024-dm", value)
         setIsActive(e.target.checked)
     }
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            setIsActive(localStorage.getItem("p2024-dm") === "light")
-        } else {
-            setIsActive(document.body.getAttribute("data-theme") === "light")
+            const savedTheme = localStorage.getItem("p2024-dm")
+            const currentTheme = document.documentElement.getAttribute("data-theme")
+            const theme = savedTheme || currentTheme || "dark"
+            setIsActive(theme === "light")
         }
     }, [])
 
